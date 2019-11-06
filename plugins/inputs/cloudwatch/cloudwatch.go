@@ -270,7 +270,7 @@ func (c *CloudWatch) initializeCloudWatch() {
 		},
 	}
 
-	loglevel := aws.LogOff
+	loglevel := aws.LogDebug
 	c.client = cloudwatch.New(configProvider, cfg.WithLogLevel(loglevel))
 }
 
